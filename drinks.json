@@ -1,0 +1,249 @@
+{
+	"drinks": [{
+			"name": "Cosmopolitan",
+            "src": "img/cosmo.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": true,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": true,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Sea Breeze",
+            "src": "img/seabreeze.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": true,
+					"grapefruit": true,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Screwdriver",
+			"src": "img/screwdriver.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": true,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Dirty Shirley",
+			"src": "img/dirtyshirley.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": true,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": true,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Lemon Drop",
+			"src": "img/lemondrop.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": true,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Kamikaze",
+			"src": "img/kamikaze.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": true,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": true,
+					"sprite": false,
+					"soda water": false,
+					"coke": false
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Vodka Martini",
+			"src": "img/vodkamartini.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": true,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Greyhound",
+			"src": "img/greyhound.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": true,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": true,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		}
+        
+	]
+}

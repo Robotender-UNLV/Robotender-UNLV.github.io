@@ -1,0 +1,22 @@
+.drinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.parentDrinkContainer {
+    background: mediumpurple;
+    margin: 1px;
+    border-radius: 7px;
+    padding: 13px 13px;
+    text-align: center;
+    width: 25%;
+}
+.parentDrinkContainer:hover
+{
+    background:rgb(150, 129, 192);
+}
+img
+{
+    border-radius: 5%;
+}
