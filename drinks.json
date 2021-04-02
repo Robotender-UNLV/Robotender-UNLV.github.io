@@ -243,6 +243,37 @@
 					"sweet and sour": false
 				}
 			}
+		},
+		{
+			"name": "Gimlet",
+			"src": "img/gimlet.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": true,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
 		}
         
 	]
