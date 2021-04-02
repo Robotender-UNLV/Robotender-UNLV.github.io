@@ -1,3 +1,4 @@
+
 function displayDrinkOptions(alcoholType) {
     console.log(alcoholType);
     //display none on parent div
@@ -20,7 +21,7 @@ function displayDrinkOptions(alcoholType) {
                 if(y == alcoholType && parentObj[x].ingredients.alcohol[y] == true)
                 {
                     //should be added to the list.
-                    var parentDrinkContainer = "<div class='parentDrinkContainer " +drinkName+" '></div>"
+                    var parentDrinkContainer = "<div class='parentDrinkContainer "+drinkName+"' data-drink='"+drinkName+"'></div>"
                     $('.drinks').append(parentDrinkContainer)
 
                     //add drink to parentDrinkContainer
@@ -28,7 +29,7 @@ function displayDrinkOptions(alcoholType) {
                         $(drinkNameClass).append(imgTest);
                     
                    
-                    var drink = "<div> <h2>" + parentObj[x].name + "</h2> <ul class='ingredients'></ul></div>" ;
+                    var drink = "<div> <h2>" + parentObj[x].name + "</h2> </div>" ;
                     $(drinkNameClass).append(drink);
 
                    
@@ -44,32 +45,7 @@ function displayDrinkOptions(alcoholType) {
                 
             }
 
-            //  //go through mixers
-            //  for(a in parentObj[x].ingredients.mixer)
-            //  {
-
-            //      if(parentObj[x].ingredients.mixer[a] == true)
-            //      {
-            //          console.log("A " + a);
-            //          var ingredientToAdd = "<li class= 'mixer'>" + a + "</li>";
-            //          var ulDiv = drinkNameClass + "> div > ul ";
-            //          $(ulDiv).append(ingredientToAdd);
-            //      }
-                
-            //  }
-            //  //go through syrups
-            //  for(a in parentObj[x].ingredients.syrup)
-            //  {
-
-            //      if(parentObj[x].ingredients.syrup[a] == true)
-            //      {
-            //          console.log("A " + a);
-            //          var ingredientToAdd = "<li class= 'syrup'>" + a + "</li>";
-            //          var ulDiv = drinkNameClass + "> div > ul ";
-            //          $(ulDiv).append(ingredientToAdd);
-            //      }
-                
-            //  }
+           
              
         }
 
@@ -80,3 +56,70 @@ function back() {
     $(".drinks").parent().addClass("d-none");
     $(".alcoholFilter").removeClass("d-none");
 }
+
+
+//Fill ingredient modal
+$(document).on('click', '.parentDrinkContainer', function (e) {
+    var className = $(this).attr("data-drink");
+    console.log(className);
+    var ulDiv = ".ingredients";
+    $(ulDiv).empty();
+    $.getJSON('drinks.json', function(data) {
+        var parentObj = data.drinks;
+       
+        for(x in parentObj)
+        {
+           console.log("X " + x + "obj " + parentObj[x].name.split(' ').join('') + " className " + className);
+          
+            if(parentObj[x].name.split(' ').join('') === className)
+            {
+                console.log("I am Equal :D")
+                for(a in parentObj[x].ingredients.alcohol)
+                {
+
+                    if(parentObj[x].ingredients.alcohol[a] == true)
+                    {
+                        console.log("A " + a);
+                        var ingredientToAdd = "<li class= 'alcohol'>" + a + "</li>";
+                    
+                        $(ulDiv).append(ingredientToAdd);
+                    }
+                    
+                }
+                //  //go through mixers
+                for(a in parentObj[x].ingredients.mixer)
+                {
+
+                    if(parentObj[x].ingredients.mixer[a] == true)
+                    {
+                        console.log("A " + a);
+                        var ingredientToAdd = "<li class= 'mixer'>" + a + "</li>";
+                    
+                        $(ulDiv).append(ingredientToAdd);
+                    }
+                    
+                }
+                //go through syrups
+                for(a in parentObj[x].ingredients.syrup)
+                {
+
+                    if(parentObj[x].ingredients.syrup[a] == true)
+                    {
+                        console.log("A " + a);
+                        var ingredientToAdd = "<li class= 'syrup'>" + a + "</li>";
+                    
+                        $(ulDiv).append(ingredientToAdd);
+                    }
+                    
+                }
+                
+                return;
+            }
+            
+        }
+    });
+    $('#myModal').modal('show')
+   
+  });
+
+  
