@@ -274,7 +274,628 @@
 					"sweet and sour": true
 				}
 			}
+		},
+		{
+			"name": "Martini",
+			"src": "img/martini.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": true,
+					"vermouth": true,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Corpse Reviver",
+			"src": "img/corpsereviver.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": true,
+					"gin": true,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Monkey Gland",
+			"src": "img/monkeygland.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": true,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": true,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": true,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Tom Collins",
+			"src": "img/tomcollins.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": true,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": true,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Tequila Sunrise",
+			"src": "img/tequilasunrise.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": true,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": true,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": true,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Paloma",
+			"src": "img/paloma.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": true,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": true,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Margarita",
+			"src": "img/margarita.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": true,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": true,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Tequini",
+			"src": "img/tequini.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": true,
+					"rum": false,
+					"tequila": true,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Tequila Sour",
+			"src": "img/tequilasour.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": true,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Rum and Coke",
+			"src": "img/rumandcoke.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": true,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": true
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Daiquiri",
+			"src": "img/daiquiri.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": true,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Planters Punch",
+			"src": "img/planterspunch.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": true,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": true,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Cable Car",
+			"src": "img/cablecar.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": true,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "El Presidente",
+			"src": "img/elpresidente.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": true,
+					"gin": false,
+					"vermouth": true,
+					"rum": true,
+					"tequila": false,
+					"whiskey": false
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": true,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Manhattan",
+			"src": "img/manhattan.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": true,
+					"rum": false,
+					"tequila": false,
+					"whiskey": true
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Whiskey Sour",
+			"src": "img/whiskeysour.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": true
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": true,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "John Collins",
+			"src": "img/johncollins.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": true
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": true,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Highball",
+			"src": "img/highball.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": true
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": true,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": false
+				}
+			}
+		},
+		{
+			"name": "Lynchburg Lemonade",
+			"src": "img/lynchburglemonade.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": false,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": true
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": true,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": false,
+					"sweet and sour": true
+				}
+			}
+		},
+		{
+			"name": "Fancy Whiskey Cocktail",
+			"src": "img/fancywhiskeycocktail.jpg",
+			"ingredients":  {
+				"alcohol": {
+					"vodka": false,
+					"triple sec": true,
+					"gin": false,
+					"vermouth": false,
+					"rum": false,
+					"tequila": false,
+					"whiskey": true
+				},
+				"mixer": {
+					"cranberry": false,
+					"grapefruit": false,
+					"orange": false,
+					"sprite": false,
+
+					"soda water": false,
+					"coke": false
+
+
+				},
+				"syrup": {
+					"grenadine": false,
+					"simple": true,
+					"sweet and sour": false
+				}
+			}
 		}
+		
         
 	]
 }
