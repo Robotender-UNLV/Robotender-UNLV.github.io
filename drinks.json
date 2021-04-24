@@ -2,7 +2,7 @@
 	"drinks": [{
 			"name": "Cosmopolitan",
             "src": "img/cosmo.jpg",
-			"description": "Lipsmackingly sweet and sour, the Cosmopolitan cocktail of vodka, cranberry, and triple sec is a good-time in a glass. Perfect for a party",
+			"description": "The cosmopolitan, typically referred to as the 'cosmo,' gained popularity during the 1990s when it was frequently mentioned on the television show Sex and the City. The combination of vodka, orange liqueur, lime juice, and cranberry juice have made it a timeless classic.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -66,6 +66,8 @@
 		{
 			"name": "Screwdriver",
 			"src": "img/screwdriver.jpg",
+			"description": "The Screwdriver is a classic drink that has been designated an International Bartender Association official cocktail. The history of the Screwdriver is somewhat debatable, even though mention of it in literature goes back to 1949, when vodka was first gaining traction in the United States.",
+
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -97,6 +99,7 @@
 		{
 			"name": "Dirty Shirley",
 			"src": "img/dirtyshirley.jpg",
+			"description": "The Dirty Shirley is an adult version of the famous Shirley Temple cocktail. This Dirty Shirley cocktail pays homage to the child star known to complain that her namesake drink was too sweet! ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -128,6 +131,7 @@
 		{
 			"name": "Lemon Drop",
 			"src": "img/lemondrop.jpg",
+			"description": "The Lemon Drop first squeezed to life in San Francisco sometime during the 1970s. Its inventor, Norman Jay Hobday, an out-of-work Vietnam vet turned saloon owner, is also credited with opening the country’s first fern bar, a concept that mixed house plants and Tiffany lamps with throngs of upwardly mobile urbanites.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -159,6 +163,7 @@
 		{
 			"name": "Kamikaze",
 			"src": "img/kamikaze.jpg",
+			"description": "The kamikaze is an iconic bar drink that has been around since the mid-20th century. It's one of the best-known vodka 'martinis' and offers a sweet-tart taste that many drinkers enjoy. In fact, it's such a popular mix that there's also a kamikaze shooter and several variations to explore.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -187,6 +192,8 @@
 		{
 			"name": "Vodka Martini",
 			"src": "img/vodkamartini.jpg",
+			"description": "With only 3 essential ingredients, a classic martini is one of the easiest cocktails around. The martini's simplicity has no bearing on its elegance. You will feel on top of the world after your first sip.",
+
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -218,6 +225,8 @@
 		{
 			"name": "Greyhound",
 			"src": "img/greyhound.jpg",
+			"description": "Gin was the original spirit of choice in the Prohibition-era greyhound. When vodka caught the attention of American drinkers after World War II, it quickly replaced the gin. ",
+
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
