@@ -80,7 +80,7 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.alcohol[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<li class= 'alcohol'>" + a + "</li>";
+                        var ingredientToAdd = "<label class= 'alcohol'>" + a + "</li>";
                     
                         $(ulDiv).append(ingredientToAdd);
                     }
