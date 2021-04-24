@@ -2,6 +2,7 @@
 	"drinks": [{
 			"name": "Cosmopolitan",
             "src": "img/cosmo.jpg",
+			"description": "Lipsmackingly sweet and sour, the Cosmopolitan cocktail of vodka, cranberry, and triple sec is a good-time in a glass. Perfect for a party",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -33,6 +34,7 @@
 		{
 			"name": "Sea Breeze",
             "src": "img/seabreeze.jpg",
+			"description": "The Sea Breeze is an icon of 1980s drinking, a light and refreshing cocktail that pairs perfectly with sunny days at the beach. Featuring vodka, cranberry juice and grapefruit juice",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,

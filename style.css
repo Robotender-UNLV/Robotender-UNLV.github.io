@@ -5,17 +5,29 @@
     justify-content: center;
 }
 .parentDrinkContainer {
-    background: mediumpurple;
-    margin: 1px;
-    border-radius: 7px;
-    padding: 13px 13px;
-    text-align: center;
-    width: 25%;
+    
+    margin: 12px;
+    /* border-radius: 7px; */
+    /* padding: 13px 13px; */
+    /* text-align: center; */
+    width: 100%;
 }
-.parentDrinkContainer:hover
+.parentDrinkContainer div h2{
+    margin: 12px auto;
+   
+}
+
+.parentDrinkContainer div
 {
-    background:rgb(150, 129, 192);
+    display: flex;
+    flex-flow: column;
 }
+.parentDrinkContainer:nth-child(odd)
+{
+    background-color: rgb(206 206 206 / 23%);
+    border-radius: 10px;
+}
+
 img
 {
     border-radius: 5%;

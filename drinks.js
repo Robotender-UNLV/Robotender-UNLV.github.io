@@ -2,8 +2,8 @@
 function displayDrinkOptions(alcoholType) {
     console.log(alcoholType);
     //display none on parent div
-    $(".alcoholFilter").addClass("d-none");
-    $(".drinks").empty();
+    // $(".alcoholFilter").addClass("d-none");
+     $(".drinks").empty();
     $(".drinks").parent().removeClass("d-none");
     
 
@@ -21,15 +21,15 @@ function displayDrinkOptions(alcoholType) {
                 if(y == alcoholType && parentObj[x].ingredients.alcohol[y] == true)
                 {
                     //should be added to the list.
-                    var parentDrinkContainer = "<div class='parentDrinkContainer "+drinkName+"' data-drink='"+drinkName+"'></div>"
+                    var parentDrinkContainer = "<div class='parentDrinkContainer d-flex "+drinkName+"' data-drink='"+drinkName+"'></div>"
                     $('.drinks').append(parentDrinkContainer)
 
                     //add drink to parentDrinkContainer
-                        var imgTest = "<img class = 'img-fluid' src ='" + parentObj[x].src +"'/>";
+                        var imgTest = "<img class = 'img-fluid pr-5' src ='" + parentObj[x].src +"'/>";
                         $(drinkNameClass).append(imgTest);
                     
                    
-                    var drink = "<div> <h2>" + parentObj[x].name + "</h2> </div>" ;
+                    var drink = "<div class='p-3'> <h2>" + parentObj[x].name + "</h2> <p>"+ parentObj[x].description +"</p><button class='btn btn-outline-success'>Order Now</button></div>" ;
                     $(drinkNameClass).append(drink);
 
                    
