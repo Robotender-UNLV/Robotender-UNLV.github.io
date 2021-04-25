@@ -222,7 +222,7 @@
 		{
 			"name": "Greyhound",
 			"src": "img/greyhound.jpg",
-			"description": "Gin was the original spirit of choice in the Prohibition-era greyhound. When vodka caught the attention of American drinkers after World War II, it quickly replaced the gin. ",
+			"description": "Gin was the original spirit of choice in the Prohibition-era greyhound. When vodka caught the attention of American drinkers after World War II, it quickly replaced the gin.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,
@@ -254,6 +254,7 @@
 		{
 			"name": "Gimlet",
 			"src": "img/gimlet.jpg",
+			"description": "The gimlet is a cocktail made of gin and lime juice. A 1928 description of the drink was: gin, and a spot of lime. ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -285,6 +286,7 @@
 		{
 			"name": "Martini",
 			"src": "img/martini.jpg",
+			"description":"The martini is a cocktail made with gin and vermouth, and garnished with an olive or a lemon twist. Over the years, the martini has become one of the best-known mixed alcoholic beverages. ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -316,6 +318,7 @@
 		{
 			"name": "Corpse Reviver",
 			"src": "img/corpsereviver.jpg",
+			"description":"The Corpse Reviver family of named cocktails are sometimes drunk as alcoholic hangover 'cures', of potency or characteristics to tongue in cheek be able to revive even a dead person.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -347,6 +350,7 @@
 		{
 			"name": "Monkey Gland",
 			"src": "img/monkeygland.jpg",
+			"description":"The Monkey Gland is a cocktail of gin, orange juice, grenadine and absinthe created in the 1920s by Harry MacElhone, owner of Harry's New York Bar in Paris, France.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -378,6 +382,7 @@
 		{
 			"name": "Tom Collins",
 			"src": "img/tomcollins.jpg",
+			"description":"The Tom Collins is a Collins cocktail made from gin, lemon juice, sugar, and carbonated water. ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -409,6 +414,7 @@
 		{
 			"name": "Tequila Sunrise",
 			"src": "img/tequilasunrise.jpg",
+			"description":"The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -440,6 +446,7 @@
 		{
 			"name": "Paloma",
 			"src": "img/paloma.jpg",
+			"description":"The paloma is a tequila-based cocktail. This drink is most commonly prepared by mixing tequila, lime juice, and a grapefruit-flavored soda such as Fresca, Squirt, or Jarritos and served on the rocks with a lime wedge.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -471,6 +478,7 @@
 		{
 			"name": "Margarita",
 			"src": "img/margarita.jpg",
+			"description":"A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice, blended with ice, or without ice.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -502,6 +510,7 @@
 		{
 			"name": "Tequini",
 			"src": "img/tequini.jpg",
+			"description":"The tequini is simply a martini that's made with tequila. It's a drier cocktail than what you may be used to for tequila cocktails but it's a fascinating concoction that allows a really good tequila to shine. ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -533,6 +542,7 @@
 		{
 			"name": "Tequila Sour",
 			"src": "img/tequilasour.jpg",
+			"description":"A tequila sour is one in the family of sour cocktails. Sours are three parts: liquor, citrus, and sweetener.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -564,6 +574,7 @@
 		{
 			"name": "Rum and Coke",
 			"src": "img/rumandcoke.jpg",
+			"description":"Rum and Coke, or the Cuba libre, is a highball cocktail consisting of cola, rum, and in many recipes lime juice on ice. ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -595,6 +606,7 @@
 		{
 			"name": "Daiquiri",
 			"src": "img/daiquiri.jpg",
+			"description":"Daiquiri is a family of cocktails whose main ingredients are rum, citrus juice, and sugar or other sweetener. The daiquiri is one of the six basic drinks listed in David A. Embury's classic The Fine Art of Mixing Drinks, which also lists some variations.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -626,6 +638,7 @@
 		{
 			"name": "Planters Punch",
 			"src": "img/planterspunch.jpg",
+			"description":"Planter's punch is an IBA Official Cocktail made of Jamaican rum, fresh lime juice, and sugar cane juice. The cocktail has been said to have originated at the Planters Hotel in Charleston, South Carolina, but actually originated in Jamaica.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -657,6 +670,7 @@
 		{
 			"name": "Cable Car",
 			"src": "img/cablecar.jpg",
+			"description":"The Cable Car is an excellent rum sour. The cocktail was created by Tony Abou-Ganim, the Modern Mixologist, and is considered by many to be a modern classic.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -688,6 +702,7 @@
 		{
 			"name": "El Presidente",
 			"src": "img/elpresidente.jpg",
+			"description":"The El Presidente cocktail is a Cuban alcoholic drink made of rum, orange curaçao, vermouth, and grenadine. The original recipe calls for blanc vermouth.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -719,6 +734,7 @@
 		{
 			"name": "Manhattan",
 			"src": "img/manhattan.jpg",
+			"description":"A Manhattan is a cocktail made with whiskey, sweet vermouth, and bitters. While rye is the traditional whiskey of choice, other commonly used whiskies include Canadian whisky, bourbon, blended whiskey, and Tennessee whiskey.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -750,6 +766,7 @@
 		{
 			"name": "Whiskey Sour",
 			"src": "img/whiskeysour.jpg",
+			"description":"The whiskey sour is a mixed drink containing whiskey, lemon juice, sugar, and optionally, a dash of egg white or cocktails foamer. With the egg white, it is sometimes called a Boston Sour.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -781,6 +798,7 @@
 		{
 			"name": "John Collins",
 			"src": "img/johncollins.jpg",
+			"description":"A John Collins is a cocktail which was attested in 1869, but may be older. It is believed to have originated with a headwaiter of that name who worked at Limmer's Old House in Conduit Street in Mayfair, which was a popular London hotel and coffee house around 1790–1817.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -812,6 +830,7 @@
 		{
 			"name": "Highball",
 			"src": "img/highball.jpg",
+			"description":"A highball is a mixed alcoholic drink composed of an alcoholic base spirit and a larger proportion of a non-alcoholic mixer, often a carbonated beverage. Examples include the Seven and Seven, Scotch and soda, and rum and Coke.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -843,6 +862,7 @@
 		{
 			"name": "Lynchburg Lemonade",
 			"src": "img/lynchburglemonade.jpg",
+			"description":"A Lynchburg Lemonade is a cocktail and long drink made with, among other ingredients, Jack Daniel's Tennessee whiskey. ",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
@@ -874,6 +894,7 @@
 		{
 			"name": "Fancy Whiskey Cocktail",
 			"src": "img/fancywhiskeycocktail.jpg",
+			"description":"Whiskey fans can enjoy their favorite spirit in style with this blended whiskey cocktail with a hint of fruit. Like its whiskey 'martini' counterparts, the Manhattan and Algonquin, the Fancy Whiskey is a great way to display your favorite whiskey in an 'up' drink.",
 			"ingredients":  {
 				"alcohol": {
 					"vodka": false,
