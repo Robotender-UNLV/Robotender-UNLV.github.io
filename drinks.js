@@ -42,6 +42,21 @@ function suggested()
 
 }
 
+$( "#pumpsModal" ).on('shown.bs.modal', function(){
+
+    var pumpClass = document.getElementsByClassName("pumpSet")
+    var EleName = $('.pumpSet ul li').find('select');
+    console.log(EleName);
+    if(EleName.length == 0)
+    {
+       
+        let options = "<select><option>vodka</option><option>Triple sec</option><option>Gin</option><option>Vermouth</option><option>Rum</option><option>tequila</option><option>Whiskey</option><option>cranberry</option><option>grapefruit</option><option>Orange</option><option>sprite</option><option>Soda Water</option><option>Grenadine</option><option>Simple Syrup</option><option>sweet and sour</option></select>"
+        $('.pumpSet ul li').append(options);
+    }
+   
+   
+});
+
 
 function displayDrinkOptions(alcoholType) {
     console.log(alcoholType);
