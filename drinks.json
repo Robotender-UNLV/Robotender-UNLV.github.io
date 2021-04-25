@@ -18,11 +18,8 @@
 					"grapefruit": false,
 					"orange": false,
 					"sprite": false,
-
 					"soda water": false,
 					"coke": false
-
-
 				},
 				"syrup": {
 					"grenadine": false,
@@ -226,7 +223,6 @@
 			"name": "Greyhound",
 			"src": "img/greyhound.jpg",
 			"description": "Gin was the original spirit of choice in the Prohibition-era greyhound. When vodka caught the attention of American drinkers after World War II, it quickly replaced the gin. ",
-
 			"ingredients":  {
 				"alcohol": {
 					"vodka": true,

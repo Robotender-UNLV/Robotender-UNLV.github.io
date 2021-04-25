@@ -1,3 +1,47 @@
+function suggested()
+{
+    $(".drinks").empty();
+    $(".drinks").parent().removeClass("d-none");
+    var title = "<h2>Suggested Drinks</h2>";
+
+    $('.drinks').append(title);
+    let drinkRandom = [];
+    const numberOfSuggestions = Math.floor(Math.random() * 10 ) +1;  // 1 though 9
+    $.getJSON('drinks.json', function(data) {
+        var parentObj = data.drinks;
+        for(var i = 0; i <= numberOfSuggestions; i++)
+        {
+           
+            //generate random value for drink placement & place in values not allowed
+            let drinkValue;
+            do
+            {
+                drinkValue = Math.floor(Math.random() * parentObj.length); // 0 to max amount of objects
+            }while(drinkRandom.includes(drinkValue));
+
+            drinkRandom.push(drinkValue); //add value to array
+
+            var drinkName = parentObj[drinkValue].name.split(' ').join('');
+            var drinkNameClass = "."+ drinkName;
+
+            //should be added to the list.
+            var parentDrinkContainer = "<div class='parentDrinkContainer d-flex "+drinkName+"' data-drink='"+drinkName+"'></div>"
+            $('.drinks').append(parentDrinkContainer)
+
+            //add drink to parentDrinkContainer
+                var imgTest = "<img class = 'img-fluid pr-5' src ='" + parentObj[drinkValue].src +"'/>";
+                $(drinkNameClass).append(imgTest);
+            
+           
+            var drink = "<div class='p-3'> <h2>" + parentObj[drinkValue].name + "</h2> <p>"+ parentObj[drinkValue].description +"</p><button class='btn btn-outline-success'>Order Now</button></div>" ;
+            $(drinkNameClass).append(drink);
+           
+
+        }
+    });
+
+}
+
 
 function displayDrinkOptions(alcoholType) {
     console.log(alcoholType);

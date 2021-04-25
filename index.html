@@ -8,27 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload='suggested()'>
     <h1 class="mx-auto my-4 text-center">Welcome to the RoboTender</h1>
 
     <div class="container alcoholFilter">
-        <div class="d-flex justify-content-around mb-5"> 
-        
-        <button type="button" class="btn btn-primary " onclick="displayDrinkOptions('vodka')">
-            <h2>Vodka</h2>
-        </button>
-       <button type="button" class="btn btn-primary  " onclick="displayDrinkOptions('gin')">
-            <h2>Gin</h2>
-       </button>
-       <button type="button" class="btn btn-primary " onclick="displayDrinkOptions('tequila')">
-            <h2>Tequila</h2>
-       </button>
-       <button type="button" class="btn btn-primary " onclick="displayDrinkOptions('rum')">
-            <h2>Rum</h2>
-       </button>
-       <button type="button" class="btn btn-primary " onclick="displayDrinkOptions('whiskey')">
-            <h2>Whiskey</h2>
-       </button></div>
+        <div class="d-flex justify-content-around mb-5 nav"> 
+          <div class="nav-item" onclick="suggested()">
+            <h5>Suggested</h5>
+        </div>
+        <div class="nav-item" onclick="displayDrinkOptions('vodka')">
+            <h5>Vodka</h5>
+        </div>
+       <div class="nav-item" onclick="displayDrinkOptions('gin')">
+            <h5>Gin</h5>
+       </div>
+       <div class="nav-item" onclick="displayDrinkOptions('tequila')">
+            <h5>Tequila</h5>
+       </div>
+       <div class="nav-item" onclick="displayDrinkOptions('rum')">
+            <h5>Rum</h5>
+       </div>
+       <div class="nav-item" onclick="displayDrinkOptions('whiskey')">
+            <h5>Whiskey</h5>
+       </div>
        
     </div>
     <div class="container  d-none">
