@@ -139,7 +139,7 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.alcohol[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<label class= 'alcohol'>" + a + "</li>";
+                        var ingredientToAdd = "<div><label class= 'alcohol'>" + a + "</label><select><option>None</option><option>Half Shot</option><option selected>Single Shot</option><option>Double Shot</option></select></div>";
                     
                         $(ulDiv).append(ingredientToAdd);
                     }
@@ -152,7 +152,7 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.mixer[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<li class= 'mixer'>" + a + "</li>";
+                        var ingredientToAdd = "<div><label class= 'mixer'>" + a + "</label><select><option>None</option><option>Light</option><option selected>Normal</option><option>Extra</option></select></div>";
                     
                         $(ulDiv).append(ingredientToAdd);
                     }
@@ -165,7 +165,7 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.syrup[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<li class= 'syrup'>" + a + "</li>";
+                        var ingredientToAdd = "<div><label class= 'syrup'>" + a + "</label><select><option>None</option><option>Light</option><option selected>Normal</option><option>Extra</option></select></div>";
                     
                         $(ulDiv).append(ingredientToAdd);
                     }
