@@ -87,13 +87,21 @@ function order(info)
 
     if(filteredArray.length == 0)
     {
-        console.log("YOU CAN MAKE THIS")
-        
+        console.log("YOU CAN MAKE THIS");
+        $.ajax({
+            url: '/led?status=[10,0,5,20]',
+            method: 'GET',
+            success: function(result) {
+                console.log(result);
+         }
+        });
+        e.preventDefault();
     }
     else
     {
         console.log("You cannot make this");
     }
+
 }
 $('#pumpsModal').on('hide.bs.modal', function(){
     var pump1  = document.getElementById('pump1').lastChild.value;
