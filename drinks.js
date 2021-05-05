@@ -198,7 +198,7 @@ $('#pumpsModal').on('hide.bs.modal', function(){
     
 })
 $( "#pumpsModal" ).on('shown.bs.modal', function(){
-
+    $("#savePumps").removeClass("d-none");
     var pumpClass = document.getElementsByClassName("pumpSet")
     var EleName = $('.pumpSet ul li').find('select');
     console.log(EleName);
@@ -212,6 +212,30 @@ $( "#pumpsModal" ).on('shown.bs.modal', function(){
    
 });
 
+function cleanMode()
+{
+    $("#pumpSet ul").empty().append("<div><h1>Clean Mode, Load cleaning solution now</h1></div>");
+    $("#savePumps").addClass("d-none");
+    $("#continue").removeClass("d-none");
+   
+}
+function cleaning()
+{
+    $.ajax({
+        url: '/robo?pump1=20&pump2=20&pump3=20&pump4=20',
+        method: 'GET',
+        success: function(result) {
+            console.log(result);
+            //replace with order complete message
+            $("#pumpSet ul").append("<div><h1>Cleaning Complete, run water</h1></div>");
+            $("#savePumps").addClass("d-none");
+            $("#continue").addClass("d-none");
+            
+     }
+    });
+
+
+}
 
 function displayDrinkOptions(alcoholType) {
     console.log(alcoholType);
