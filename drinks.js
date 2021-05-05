@@ -1,12 +1,12 @@
 function suggested()
 {
 
-    localStorage.setItem("pump1", "default");
-    localStorage.setItem("pump2", "default");
+    localStorage.setItem("pump1", "vodka");
+    localStorage.setItem("pump2", "orange");
 
-    localStorage.setItem("pump3", "default");
+    localStorage.setItem("pump3", "simple");
 
-    localStorage.setItem("pump4", "default");
+    localStorage.setItem("pump4", "sweet and sour");
     $(".drinks").empty();
     $(".drinks").parent().removeClass("d-none");
     var title = "<h2>Suggested Drinks</h2>";
@@ -53,23 +53,34 @@ function order(info)
     var numberOfIngredients = document.getElementById("ingredientContainer").childElementCount;
     console.log(numberOfIngredients);
     var ingredient0 = document.getElementById('ingredientNum0').firstChild.textContent;
-    if(numberOfIngredients = 2)
+    var neededIngredients = [ingredient0];
+    if(numberOfIngredients == 2)
     {
         var ingredient1 = document.getElementById('ingredientNum1').firstChild.textContent;
-        var neededIngredients = [ingredient0, ingredient1];
+         neededIngredients = [ingredient0, ingredient1];
+
     }
-    else if(numberOfIngredients = 3)
+    else if(numberOfIngredients == 3)
     {
         var ingredient2 = document.getElementById('ingredientNum2').firstChild.textContent;
+
         var ingredient1 = document.getElementById('ingredientNum1').firstChild.textContent;
-        var neededIngredients = [ingredient0, ingredient1,ingredient2];
+
+        neededIngredients = [ingredient0, ingredient1,ingredient2];
+
+
     }
-    else if(numberOfIngredients = 4)
+    else if(numberOfIngredients == 4)
     {
         var ingredient2 = document.getElementById('ingredientNum2').firstChild.textContent;
+        
+
         var ingredient1 = document.getElementById('ingredientNum1').firstChild.textContent;
+
         var ingredient3 = document.getElementById('ingredientNum3').firstChild.textContent;
-        var neededIngredients = [ingredient0, ingredient1,ingredient2, ingredient3];
+
+        neededIngredients = [ingredient0, ingredient1,ingredient2, ingredient3];
+
     }
 
     //check if pumps are set to right ingredients
@@ -79,26 +90,77 @@ function order(info)
     var pump4 = localStorage.getItem("pump4");
     
     var pumpArray = [pump1, pump2, pump3, pump4];
-
+    var amounts = [0,0,0,0];
     console.log(pumpArray);
+    
 
-    const filteredArray = neededIngredients.filter(function(x) { 
-         return pumpArray.indexOf(x) < 0;
-        });
-
-    console.log(filteredArray);
-
-    if(filteredArray.length == 0)
+        console.log(neededIngredients);
+    //get time amount 
+    for(var i = 0; i < pumpArray.length; i=i+1)
     {
+        for(var j = 0; j < neededIngredients.length; j=j+1)
+        {
+            if(neededIngredients[j] == pumpArray[i])
+            {
+                console.log("Found " + j);
+                //found the ingredient
+                var idName = "ingredientNum"+j;
+                console.log(idName);
+                var ingredientPumpValue = document.getElementById(idName).lastChild.value;
+                if(typeof ingredientPumpValue !== 'undefined')
+                {
+                   
+                    console.log(ingredientPumpValue);
+                    if(ingredientPumpValue == 0 || ingredientPumpValue == "none")
+                    {
+                        amounts[i] = 0;
+                    }
+                    else if(ingredientPumpValue == "Half Shot" || ingredientPumpValue == "Light")
+                    {
+                        amounts[i] = 5;
+                    }
+                    else if(ingredientPumpValue == "Single Shot" || ingredientPumpValue == "Normal")
+                    {
+                        amounts[i] = 10;
+                    }
+                    else if(ingredientPumpValue == "Double Shot" || ingredientPumpValue == "Extra")
+                    {
+                        amounts[i] = 20;
+                    }
+                    pumpArray[i] = "default"; 
+                    neededIngredients[j] = "defaultIngred"
+                }
+                
+               
+            }
+            
+
+        }
+    }
+    console.log(amounts);
+
+    var activeDrink = true;
+    for(var a = 0; a < neededIngredients.length; a=a+1)
+    {
+        if(neededIngredients[1] != "defaultIngred")
+        {
+            activeDrink = false;
+        }
+    }
+
+    if(activeDrink)
+    {
+        
+       
         console.log("YOU CAN MAKE THIS");
         $.ajax({
-            url: '/led?status=[10,0,5,20]',
+            url: '/robo?pump1=' + amounts[0] + '&pump2=' + amounts[1] +' &pump3=' + amounts[2] + '&pump4=' + amounts[3],
             method: 'GET',
             success: function(result) {
                 console.log(result);
          }
         });
-        e.preventDefault();
+       
     }
     else
     {
