@@ -41,6 +41,60 @@ function suggested()
     });
 
 }
+function order(info)
+{
+    
+   
+
+
+    var numberOfIngredients = document.getElementById("ingredientContainer").childElementCount;
+    console.log(numberOfIngredients);
+    var ingredient0 = document.getElementById('ingredientNum0').firstChild.textContent;
+    if(numberOfIngredients = 2)
+    {
+        var ingredient1 = document.getElementById('ingredientNum1').firstChild.textContent;
+        var neededIngredients = [ingredient0, ingredient1];
+    }
+    else if(numberOfIngredients = 3)
+    {
+        var ingredient2 = document.getElementById('ingredientNum2').firstChild.textContent;
+        var ingredient1 = document.getElementById('ingredientNum1').firstChild.textContent;
+        var neededIngredients = [ingredient0, ingredient1,ingredient2];
+    }
+    else if(numberOfIngredients = 4)
+    {
+        var ingredient2 = document.getElementById('ingredientNum2').firstChild.textContent;
+        var ingredient1 = document.getElementById('ingredientNum1').firstChild.textContent;
+        var ingredient3 = document.getElementById('ingredientNum3').firstChild.textContent;
+        var neededIngredients = [ingredient0, ingredient1,ingredient2, ingredient3];
+    }
+
+    //check if pumps are set to right ingredients
+    var pump1 = localStorage.getItem("pump1");
+    var pump2 = localStorage.getItem("pump2");
+    var pump3 = localStorage.getItem("pump3");
+    var pump4 = localStorage.getItem("pump4");
+    
+    var pumpArray = [pump1, pump2, pump3, pump4];
+
+    console.log(pumpArray);
+
+    const filteredArray = neededIngredients.filter(function(x) { 
+         return pumpArray.indexOf(x) < 0;
+        });
+
+    console.log(filteredArray);
+
+    if(filteredArray.length == 0)
+    {
+        console.log("YOU CAN MAKE THIS")
+        
+    }
+    else
+    {
+        console.log("You cannot make this");
+    }
+}
 $('#pumpsModal').on('hide.bs.modal', function(){
     var pump1  = document.getElementById('pump1').lastChild.value;
     var pump2  = document.getElementById('pump2').lastChild.value;
@@ -54,6 +108,8 @@ $('#pumpsModal').on('hide.bs.modal', function(){
 
     localStorage.setItem("pump4", pump4);
 
+
+    
     
 })
 $( "#pumpsModal" ).on('shown.bs.modal', function(){
@@ -64,7 +120,7 @@ $( "#pumpsModal" ).on('shown.bs.modal', function(){
     if(EleName.length == 0)
     {
        
-        let options = "<select><option>vodka</option><option>Triple sec</option><option>Gin</option><option>Vermouth</option><option>Rum</option><option>tequila</option><option>Whiskey</option><option>cranberry</option><option>grapefruit</option><option>Orange</option><option>sprite</option><option>Soda Water</option><option>Grenadine</option><option>Simple Syrup</option><option>sweet and sour</option></select>"
+        let options = "<select><option>vodka</option><option>triple sec</option><option>gin</option><option>vermouth</option><option>rum</option><option>tequila</option><option>whiskey</option><option>cranberry</option><option>grapefruit</option><option>orange</option><option>sprite</option><option>soda water</option><option>grenadine</option><option>simple</option><option>sweet and sour</option></select>"
         $('.pumpSet ul li').append(options);
     }
    
@@ -136,6 +192,8 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
     $.getJSON('drinks.json', function(data) {
         var parentObj = data.drinks;
        
+        var newClass ="ingredientNum";
+        var ingredientCounter = 0;
         for(x in parentObj)
         {
            console.log("X " + x + "obj " + parentObj[x].name.split(' ').join('') + " className " + className);
@@ -149,8 +207,9 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.alcohol[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<div><label class= 'alcohol'>" + a + "</label><select><option>None</option><option>Half Shot</option><option selected>Single Shot</option><option>Double Shot</option></select></div>";
-                    
+                        var myid = newClass + ingredientCounter;
+                        var ingredientToAdd = "<div id='"+myid+"'><label class= 'alcohol'>" + a + "</label><select><option>None</option><option>Half Shot</option><option selected>Single Shot</option><option>Double Shot</option></select></div>";
+                        ingredientCounter++;
                         $(ulDiv).append(ingredientToAdd);
                     }
                     
@@ -162,8 +221,9 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.mixer[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<div><label class= 'mixer'>" + a + "</label><select><option>None</option><option>Light</option><option selected>Normal</option><option>Extra</option></select></div>";
-                    
+                        var myid = newClass + ingredientCounter;
+                        var ingredientToAdd = "<div id='"+myid+"'><label class= 'mixer'>" + a + "</label><select><option>None</option><option>Light</option><option selected>Normal</option><option>Extra</option></select></div>";
+                        ingredientCounter++;
                         $(ulDiv).append(ingredientToAdd);
                     }
                     
@@ -175,8 +235,9 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
                     if(parentObj[x].ingredients.syrup[a] == true)
                     {
                         console.log("A " + a);
-                        var ingredientToAdd = "<div><label class= 'syrup'>" + a + "</label><select><option>None</option><option>Light</option><option selected>Normal</option><option>Extra</option></select></div>";
-                    
+                        var myid = newClass + ingredientCounter;
+                        var ingredientToAdd = "<div id='"+myid+"'><label class= 'syrup'>" + a + "</label><select><option>None</option><option>Light</option><option selected>Normal</option><option>Extra</option></select></div>";
+                        ingredientCounter++;
                         $(ulDiv).append(ingredientToAdd);
                     }
                     
