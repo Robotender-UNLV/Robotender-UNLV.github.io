@@ -41,7 +41,21 @@ function suggested()
     });
 
 }
+$('#pumpsModal').on('hide.bs.modal', function(){
+    var pump1  = document.getElementById('pump1').lastChild.value;
+    var pump2  = document.getElementById('pump2').lastChild.value;
+    var pump3  = document.getElementById('pump3').lastChild.value;
+    var pump4  = document.getElementById('pump4').lastChild.value;
 
+    localStorage.setItem("pump1", pump1);
+    localStorage.setItem("pump2", pump2);
+
+    localStorage.setItem("pump3", pump3);
+
+    localStorage.setItem("pump4", pump4);
+
+    
+})
 $( "#pumpsModal" ).on('shown.bs.modal', function(){
 
     var pumpClass = document.getElementsByClassName("pumpSet")
@@ -110,10 +124,6 @@ function displayDrinkOptions(alcoholType) {
 
     });
     
-}
-function back() {
-    $(".drinks").parent().addClass("d-none");
-    $(".alcoholFilter").removeClass("d-none");
 }
 
 
