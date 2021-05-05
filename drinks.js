@@ -50,6 +50,9 @@ function suggested()
 }
 function order(info)
 {
+
+    $("#order").addClass("d-none");
+    $("#loading").removeClass("d-none");
     var numberOfIngredients = document.getElementById("ingredientContainer").childElementCount;
     console.log(numberOfIngredients);
     var ingredient0 = document.getElementById('ingredientNum0').firstChild.textContent;
@@ -147,23 +150,32 @@ function order(info)
             activeDrink = false;
         }
     }
-
+    $("#ingredientContainer").empty();
     if(activeDrink)
     {
         
        
         console.log("YOU CAN MAKE THIS");
+        
         $.ajax({
             url: '/robo?pump1=' + amounts[0] + '&pump2=' + amounts[1] +' &pump3=' + amounts[2] + '&pump4=' + amounts[3],
             method: 'GET',
             success: function(result) {
                 console.log(result);
+                //replace with order complete message
+                $("#ingredientContainer").append("<div><h1>Drink Pouring! Enjoy</h1></div>");
+                $("#order").addClass("d-none");
+                $("#loading").addClass("d-none")
+                
          }
         });
        
     }
     else
     {
+        $("#ingredientContainer").append("<div><h1>Unfortunately, this is not currently available</h1></div>");
+        $("#order").addClass("d-none");
+        $("#loading").addClass("d-none");
         console.log("You cannot make this");
     }
 
@@ -258,6 +270,7 @@ function displayDrinkOptions(alcoholType) {
 
 //Fill ingredient modal
 $(document).on('click', '.parentDrinkContainer', function (e) {
+   
     var className = $(this).attr("data-drink");
     console.log(className);
     var ulDiv = ".ingredients";
@@ -321,6 +334,8 @@ $(document).on('click', '.parentDrinkContainer', function (e) {
             
         }
     });
+    $("#order").removeClass("d-none");
+        $("#loading").addClass("d-none");
     $('#myModal').modal('show')
    
   });

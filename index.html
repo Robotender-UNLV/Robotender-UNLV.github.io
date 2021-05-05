@@ -54,7 +54,8 @@
         </div>
         <div class="modal-footer text-center">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" onclick = "order(this)" class="btn btn-primary">Order Now</button>
+          <button type="button" id="order" onclick = "order(this)" class="btn btn-primary">Order Now</button>
+          <button class='btn btn-primary d-none' id="loading" type='button' disabled><span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span><span class='sr-only'>Loading...</span></button>
         </div>
       </div>
     </div>
