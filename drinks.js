@@ -1,5 +1,12 @@
 function suggested()
 {
+
+    localStorage.setItem("pump1", "default");
+    localStorage.setItem("pump2", "default");
+
+    localStorage.setItem("pump3", "default");
+
+    localStorage.setItem("pump4", "default");
     $(".drinks").empty();
     $(".drinks").parent().removeClass("d-none");
     var title = "<h2>Suggested Drinks</h2>";
@@ -43,10 +50,6 @@ function suggested()
 }
 function order(info)
 {
-    
-   
-
-
     var numberOfIngredients = document.getElementById("ingredientContainer").childElementCount;
     console.log(numberOfIngredients);
     var ingredient0 = document.getElementById('ingredientNum0').firstChild.textContent;
