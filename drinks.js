@@ -198,6 +198,8 @@ $('#pumpsModal').on('hide.bs.modal', function(){
     
 })
 $( "#pumpsModal" ).on('shown.bs.modal', function(){
+
+    
     $("#savePumps").removeClass("d-none");
     var pumpClass = document.getElementsByClassName("pumpSet")
     var EleName = $('.pumpSet ul li').find('select');
