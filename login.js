@@ -38,7 +38,7 @@ function passCheck()
     if(emailUser == localStorage.getItem("user1Email") || emailUser == localStorage.getItem("user2Email") || emailUser == localStorage.getItem("newUserEmail"))
     {
         console.log("valid");
-        window.location.href = "http://127.0.0.1:5500/drink.html";
+        window.location.href = "https://robotender-unlv.github.io/drink.html";
     }
 
     else
